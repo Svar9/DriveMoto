@@ -1,6 +1,5 @@
-.header__top {
+.header__inner {
     display: flex;
-    height: 90px;
-    width: 100%;
-    background-color: red;
+    justify-content: space-between;
+    align-items: center;
 }
