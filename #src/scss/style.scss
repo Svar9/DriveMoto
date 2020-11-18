@@ -1,25 +1,14 @@
+@import "vars";
 @import "mixins";
 @import "fonts";
 
-body {
-   font-size: 18px;
+/* Vendor libs */
+@import "vendor/normalize";
+@import "vendor/slick";
+@import "vendor/jquery.rateyo";
 
-   display: flex;
-}
+/* Default styles */
+@import "global";
 
-span {
-   font-size: 20px;
-
-   @media (max-width: 767px) {
-      font-size: 15px;
-   }
-}
-
-div {
-   font-size: 30px;
-   background: url("../images/CArjtoC0sJg.jpg") 0 0 no-repeat;
-
-   @media (max-width: 767px) {
-      font-size: 20px;
-   }
-}
+/* Blocks */
+@import "blocks/header"
