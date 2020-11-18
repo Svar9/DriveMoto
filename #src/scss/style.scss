@@ -1,0 +1,25 @@
+@import "mixins";
+@import "fonts";
+
+body {
+   font-size: 18px;
+
+   display: flex;
+}
+
+span {
+   font-size: 20px;
+
+   @media (max-width: 767px) {
+      font-size: 15px;
+   }
+}
+
+div {
+   font-size: 30px;
+   background: url("../images/CArjtoC0sJg.jpg") 0 0 no-repeat;
+
+   @media (max-width: 767px) {
+      font-size: 20px;
+   }
+}
