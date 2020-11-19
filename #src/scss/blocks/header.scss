@@ -1,5 +1,51 @@
-.header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+
+    &__top {
+    }
+
+    &__inner {
+        margin: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 80px;
+        height: 76px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__adress {
+        margin-right: 86px;
+        padding-left: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        position: relative;
+        
+        &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            z-index: 1;
+            background-image: url(../images/icons/adress.svg);
+        }
+    }
+
+    &__user {
+    }
+
+    &__bottom {
+        background-color: #F0F0F4;
+    }
 }
+
+
