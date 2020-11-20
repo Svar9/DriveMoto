@@ -39,6 +39,8 @@
         width: 0;
         background-color: $blue;
         transition: all .3s;
+        right: 0;
+        left: auto;
     }
 
     &:hover {
@@ -46,6 +48,8 @@
 
         &::before {
             width: 100%;
+            right: auto;
+            left: 0;
         }
     }
 }
