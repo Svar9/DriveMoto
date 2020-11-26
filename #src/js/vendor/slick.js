@@ -7,7 +7,7 @@ console.log (1);
         prevArrow: '<button type="button" class="slick-prev slider__arrow slider__arrow--prev"></button>',
         nextArrow: '<button type="button" class="slick-next slider__arrow slider__arrow--next"></button>',
         dots: true,
-        autoplay: true,
+        autoplay: false,
         infinite: true
     });
         

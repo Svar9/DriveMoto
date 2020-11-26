@@ -1,0 +1,37 @@
+.discount-item {
+    display: block;
+    max-width: 265px;
+    width: 100%;
+    border: 1px solid #CDCDCD;
+}
+
+.discount-item__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.discount-item__action {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    background-color: $blue;
+    padding: 8px 20px;  
+}
+
+.discount-item__price{
+    &--new {
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 32px;
+        color: $blue;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+        &::after {
+            content: "";
+            background-image: url('../images/icons/rubl-new.svg');
+            width: 15px;
+            height: 18px;
+        }
+    }
+}
