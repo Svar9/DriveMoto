@@ -54,7 +54,6 @@ body {
 }
 
 .logo {
-
     &__img {
         width: 100%;
         height: 100%;
@@ -65,4 +64,10 @@ body {
 .slider-discount {
     display: flex;
     justify-content: space-between;
+}
+
+.price {
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+
 }

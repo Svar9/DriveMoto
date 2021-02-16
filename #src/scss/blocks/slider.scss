@@ -4,5 +4,61 @@
 
 .slider__item {
    width: 100%;
+}
 
+.slider__arrow {
+   position: absolute;
+   z-index: 7;
+   background-image: url("../images/icons/slider-arrow.svg");
+   width: 16px;
+   height: 29px;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+
+   &::before {
+      content: "";
+   }
+
+
+   &--next {
+      right: 15px;
+   }
+
+   &--prev {
+      left: 15px;
+      transform: rotate(180deg);
+   }
+}
+
+.slick-dots {
+   position: absolute;
+   bottom: 40px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 5;
+
+   li {
+      width: 11px;
+      height: 11px;
+      margin: 0 4.5px;
+
+      &.slick-active button {
+         background-color: #fff;
+      }
+   }
+
+   li button {
+      width: 11px;
+      height: 11px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+   }
+}
+
+.slider__discount--img {
+   object-fit: cover;
+   min-height: 400px;
 }
