@@ -6,7 +6,8 @@
    width: 100%;
 }
 
-.slider__arrow {
+.slider__arrow,
+.product-slider__arrow {
    position: absolute;
    z-index: 7;
    background-image: url("../images/icons/slider-arrow.svg");
@@ -58,7 +59,15 @@
    }
 }
 
+.slick-dotted.slick-slider {
+   margin-bottom: 0;
+}
+
 .slider__discount--img {
    object-fit: cover;
    min-height: 400px;
+}
+
+.slick-slide img {
+   display: inline;
 }

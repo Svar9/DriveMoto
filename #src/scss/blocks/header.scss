@@ -1,8 +1,6 @@
 .header {
-    margin-bottom: 80px;
 
-    &__top {
-    }
+    &__top {}
 
     &__inner {
         margin: 25px 0;
@@ -29,7 +27,7 @@
         font-size: 20px;
         font-weight: 700;
         position: relative;
-        
+
         &::before {
             content: "";
             width: 30px;
@@ -43,5 +41,3 @@
     }
 
 }
-
-

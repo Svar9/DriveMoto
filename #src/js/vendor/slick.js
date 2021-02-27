@@ -11,3 +11,13 @@ console.log (1);
         infinite: true
     });
         
+
+    $(".product-slider").slick({
+        arrows:true,
+        prevArrow: '<button type="button" class="slick-prev product-slider__arrow product-slider__arrow--prev"></button>',
+        nextArrow: '<button type="button" class="slick-next product-slider__arrow product-slider__arrow--next"></button>',
+        autoplay:false,
+        infinite:true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    })

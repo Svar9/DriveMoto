@@ -53,6 +53,10 @@ body {
     color: $black;
 }
 
+.page-section {
+    margin-bottom: 80px;
+}
+
 .logo {
     &__img {
         width: 100%;
@@ -69,5 +73,16 @@ body {
 .price {
     font-family: 'Barlow', sans-serif;
     position: relative;
+}
 
+.tabs__content {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+.banner {
+    margin-bottom: 80px;
 }
