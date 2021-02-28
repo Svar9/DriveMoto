@@ -1,0 +1,84 @@
+.aside-filter {
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tab {
+    width: 50%;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+
+    span {
+      display: inline-block;
+      padding-bottom: 7px;
+      border-bottom: 1px solid transparent;
+    }
+
+    &.active span {
+      font-weight: bold;
+      color: #2F3035;
+      border-bottom: 2px solid $blue;
+    }
+  }
+
+  &__item {
+
+    &--drop {
+      margin: 40px 0;
+    }
+
+    &--title {
+      font-family: 'SFProDisplay-Semibold', sans-serif;
+      padding-left: 26px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      color: #2F3035;
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+      width: 50%;
+    }
+
+    &--label {
+      font-size: 14px;
+      line-height: 17px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.filter__item--drop {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    content: "";
+    width: 12px;
+    height: 8px;
+    background-image: url('../images/icons/filter-arrow-down.svg');
+    transform: rotate(180deg);
+    transition: all .4s;
+  }
+
+  &.active::before {
+    transform: rotate(0);
+  }
+}

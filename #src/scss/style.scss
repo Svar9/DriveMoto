@@ -6,6 +6,9 @@
 @import "vendor/normalize";
 @import "vendor/slick";
 @import "vendor/jquery.rateyo";
+@import "vendor/ion.rangeSlider.min";
+@import "vendor/jquery.formstyler";
+@import "vendor/jquery.formstyler.theme";
 
 /* Default styles */
 @import "global";
@@ -20,6 +23,9 @@
 @import "blocks/search";
 @import "blocks/categories";
 @import "blocks/products";
+@import "blocks/catalog";
+@import "blocks/aside";
+@import "blocks/pagination";
 @import "blocks/footer";
 
 

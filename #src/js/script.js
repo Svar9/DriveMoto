@@ -2,6 +2,10 @@ $(function(){
 
 //= alert.js
 //= vendor/slick.js
+//= vendor/jquery.rateyo.min.js
+//= vendor/jquery.formstyler.min.js
+//= vendor/ion.rangeSlider.min.js
+
 
 
 // tabs
@@ -22,5 +26,24 @@ $('.tab').on('click', function(e){
 $('.product-item__favorite').on('click', function(e){
     $(this).toggleClass('active');
 });
+
+//filter active
+
+$('.catalog__filter--item').on('click', function(e){
+    $(this).toggleClass('active');
+});
+
+
+//filter-dropdown
+
+$('.filter__item--drop').on('click', function(e){
+    $(this).toggleClass('active');
+    $(this).next().slideToggle(200);
+});
+
+//filter form-styler
+
+$('.filter-style').styler();
+
 
 });
