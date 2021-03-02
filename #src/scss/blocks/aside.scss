@@ -64,7 +64,7 @@
       cursor: pointer;
     }
 
-    &--radio{
+    &--radio {
       flex-wrap: nowrap;
     }
   }
@@ -92,3 +92,12 @@
   }
 }
 
+.filter__item--list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c4c4c4;
+}
+
+.filter__item--list .aside-filter__item--title {
+  padding-bottom: 14px;
+}
