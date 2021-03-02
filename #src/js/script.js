@@ -45,5 +45,13 @@ $('.filter__item--drop').on('click', function(e){
 
 $('.filter-style').styler();
 
+// input range
+
+$(".js-range-slider").ionRangeSlider({
+    type: "double",
+    grid: false,
+
+});
+
 
 });
