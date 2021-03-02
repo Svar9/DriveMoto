@@ -1,4 +1,5 @@
-.jq-checkbox, .jq-radio {
+.jq-checkbox,
+.jq-radio {
     vertical-align: -2px;
     width: 14px;
     height: 14px;
@@ -38,8 +39,78 @@
 //range input
 .irs--flat {
     width: 100%;
+    margin-top: -15px;
 }
 
-.irs-from{
-    // display: none;
+.irs--flat .irs-from,
+.irs--flat .irs-single,
+.irs--flat .irs-to {
+    display: none;
+}
+
+.irs--flat .irs-max,
+.irs--flat .irs-min {
+    top: 55px;
+    color: $black;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    visibility: visible !important;
+    padding-left: 27px;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        font-family: 'SFProDisplay', sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        color: #C4C4C4;
+        padding-bottom: 4px;
+    }
+
+}
+
+.irs--flat .irs-min::before {
+    content: 'от';
+}
+
+.irs--flat .irs-max::before {
+    content: 'до';
+}
+
+
+.irs--flat .irs-line {
+    height: 1px;
+    background-color: #E0E0E0;
+    border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+    cursor: pointer;
+    top: 25px;
+    height: 3px;
+    background-color: $blue;
+}
+
+.irs--flat .irs-handle {
+    top: 22px;
+    width: 8px;
+    height: 8px;
+    background-color: $blue;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($blue, 10%);
+    }
+}
+
+.irs--flat .irs-handle>i:first-child,
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+    background-color: transparent;
 }
