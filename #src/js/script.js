@@ -28,15 +28,24 @@ $('.product-item__favorite').on('click', function(e){
 });
 
 //filter active
-
 $('.catalog__filter--item').on('click', function(e){
     $(this).toggleClass('active');
 });
 
+//filter-sort
+$('.catalog__filter--btngrid').click(function(){
+    $(this).addClass('active');
+    $('.catalog__filter--btnline').removeClass('active');
+    $('.product-item__wrapper').removeClass('product-item__wrapper--line');
+});
+$('.catalog__filter--btnline').click(function(){
+    $(this).addClass('active');
+    $('.catalog__filter--btngrid').removeClass('active');
+    $('.product-item__wrapper').addClass('product-item__wrapper--line');
+});
 
 //filter-dropdown
-
-$('.filter__item--drop').on('click', function(e){
+$('.filter__item--drop, .filter__extra').on('click', function(e){
     $(this).toggleClass('active');
     $(this).next().slideToggle(200);
 });

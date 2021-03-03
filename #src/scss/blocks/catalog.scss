@@ -49,9 +49,29 @@
       }
     }
 
-    &--btngrid {}
+    &--btns {
+      display: flex;
+      align-items: center;
+    }
 
-    &--btnline {}
+    &--btngrid {
+      width: 26px;
+      height: 100%;
+    }
+
+    &--btnline {
+      width: 26px;
+      justify-self: 19px;
+    }
+
+    &--button {
+      opacity: 0.3;
+      outline: none;
+
+      &.active {
+        opacity: 1;
+      }
+    }
   }
 }
 
