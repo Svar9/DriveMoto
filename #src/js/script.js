@@ -62,5 +62,13 @@ $(".js-range-slider").ionRangeSlider({
 
 });
 
+//star-raiting
+
+$(".rate-yo").rateYo({
+    spacing: "7px",
+    ratedFill: "#1C62CD",
+    normalFill: "#c4c4c4",
+  });
+
 
 });

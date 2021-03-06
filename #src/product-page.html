@@ -32,16 +32,118 @@
    <section class="product-card">
       <div class="container">
          <div class="product-card__inner">
-            <div class="product-card__img-box">
+            <div class="product-card__img-box sale">
                <img class="product-card__img" src="images/content/gidrotsikl-large.png" alt="">
                <p class="product-card__price-old">1 200 475 ₽</p>
                <p class="product-card__price-new">1 100 475 ₽</p>
-               <button> Нашли дешевле? Снизим цену!</button>
+               <a class="product-card__link" href="#"> Нашли дешевле? Снизим цену!</a>
             </div>
             <div class="product-card__content">
-
+               <h1 class="product-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
+               <p class="product-card__code">Код товара: 366666-2 </p>
+               <div class="product-card__buttons">
+                  <a class="product-card__icon--favorite" href="#"><img src="images/icons/heart.svg" alt=""></a>
+                  <a class="product-card__icon--comparsion" href="#"><img src="images/icons/comparsion.svg" alt=""></a>
+                  <a class="rate" href="#">
+                     <div class="rate-yo" data-rateyo-rating="4"></div>
+                  </a>
+               </div>
+               <div class="tabs__wrapper product-card__tabs">
+                  <div class="tabs">
+                     <a class="tab active product-card__tab" href="#product1">
+                        Характеристики
+                     </a>
+                     <a class="tab product-card__tab" href="#product2">
+                        Наличие в магазине
+                     </a>
+                  </div>
+                  <div class="tabs__container">
+                     <div id="product1" class="tabs__content product-card__tab--content active">
+                        <ul class="product-card__list">
+                           <li class="product-card__item">
+                              <div class="product-card__item--left">Производитель</div>
+                              <div class="product-card__item--right">Канада</div>
+                           </li>
+                           <li class="product-card__item">
+                              <div class="product-card__item--left">Количество мест, шт: </div>
+                              <div class="product-card__item--right">3</div>
+                           </li>
+                           <li class="product-card__item">
+                              <div class="product-card__item--left">Мощность, л.с.</div>
+                              <div class="product-card__item--right">155</div>
+                           </li>
+                           <li class="product-card__item">
+                              <div class="product-card__item--left">Тип двигателя</div>
+                              <div class="product-card__item--right">Бензиновый</div>
+                           </li>
+                           <li class="product-card__item">
+                              <div class="product-card__item--left">Год выпуска</div>
+                              <div class="product-card__item--right">2018</div>
+                           </li>
+                        </ul>
+                        <a class="product-card__more" href="#">Показать еще</a>
+                        <div class="product-card__btn">
+                           <button>купить</button>
+                        </div>
+                     </div>
+                     <div id="product2" class="tabs__content product-card__tab--content">
+                        content-2
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
+      </div>
+   </section>
+
+   <section class="card__tabs">
+      <div class="container">
+
+         <div class="tabs__wrapper">
+            <div class="tabs">
+               <a class="tab card__tab" href="#card__tabs-1">О товаре</a>
+               <a class="tab card__tab" href="#card__tabs-2">Характеристики</a>
+               <a class="tab card__tab" href="#card__tabs-3">Отзывы</a>
+               <a class="tab card__tab active" href="#card__tabs-4">Самовывоз</a>
+               <a class="tab card__tab" href="#card__tabs-5">Доставка</a>
+               <a class="tab card__tab" href="#card__tabs-6">Cервис</a>
+               <a class="tab card__tab" href="#card__tabs-7">Гарантия</a>
+            </div>
+            <div class="tabs__container">
+               <div id="card__tabs-1" class="tabs__content card__tab--content">content 1</div>
+               <div id="card__tabs-2" class="tabs__content card__tab--content">content 2</div>
+               <div id="card__tabs-3" class="tabs__content card__tab--content">content 3</div>
+               <div id="card__tabs-4" class="tabs__content card__tab--content  active">
+                  <form>
+                     <div class="card__top-line">
+                        <label class="card__label--search">
+                           Магазин
+                           <input class="card__input--search" type="text">
+                        </label>
+                        <label class="card__label--pickup">
+                           <input type="radio">Забрать сегодня
+                        </label>
+                        <label class="card__label--pickup">
+                           <input type="radio">Забрать в течение недели
+                        </label>
+                     </div>
+                     <ul class="card__list">
+                        <li class="card__list--item">
+                           <div class="card__list--address"></div>
+                           <div class="card__list--workhours"></div>
+                           <div class="card__list--avialable"></div>
+                           <div class="card__list--num"></div>
+                           <div class="card__list--btn"></div>
+                        </li>
+                     </ul>
+                  </form>
+               </div>
+               <div id="card__tabs-5" class="tabs__content card__tab--content">content 5</div>
+               <div id="card__tabs-6" class="tabs__content card__tab--content">content 6</div>
+               <div id="card__tabs-7" class="tabs__content card__tab--content">content 7</div>
+            </div>
+         </div>
+
       </div>
    </section>
 
