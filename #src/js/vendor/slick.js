@@ -8,7 +8,14 @@ console.log (1);
         nextArrow: '<button type="button" class="slick-next slider__arrow slider__arrow--next"></button>',
         dots: true,
         autoplay: false,
-        infinite: true
+        infinite: true,
+        responsive: [
+            {
+              breakpoint: 968,
+              settings: {
+                arrows: false
+              }
+            }]
     });
         
 
@@ -19,5 +26,34 @@ console.log (1);
         autoplay:false,
         infinite:true,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1301,
+            settings: {
+              arrows: false,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 1201,
+            settings: {
+              slidesToShow: 3,
+              dots: true,
+            }
+          },
+          {
+            breakpoint: 875,
+            settings: {
+              slidesToShow: 2,
+              dots: true,
+            }
+          },{
+            breakpoint: 590,
+            settings: {
+              slidesToShow: 1,
+              dots: true,
+            }
+          }
+        ]
     })

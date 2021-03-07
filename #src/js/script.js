@@ -70,5 +70,12 @@ $(".rate-yo").rateYo({
     normalFill: "#c4c4c4",
   });
 
+//burger +mobile menu
+
+$('.menu__btn').click(function(){
+    $('.menu-mobile__list').toggleClass('active');
+    $('.menu__btn').toggleClass('active');
+})
+
 
 });

@@ -1,5 +1,5 @@
 .products__title {
-    font-family: Barlow;
+    font-family: 'Barlow', sans-serif;
     font-weight: bold;
     font-size: 25px;
     line-height: 30px;
@@ -98,7 +98,7 @@
     }
 
     &__price {
-        font-family: Barlow;
+        font-family: 'Barlow', sans-serif;
         font-weight: bold;
         font-size: 30px;
         line-height: 36px;
@@ -228,5 +228,19 @@
         text-transform: uppercase;
         color: #2F3035;
         background-color: #F0F0F4;
+    }
+}
+
+.product-slider .slick-dots {
+    bottom: -30px;
+
+    & button {
+        background: #C4C4C4;
+        width: 14px;
+        height: 14px;
+    }
+
+    & .slick-active button {
+        background-color: $blue;
     }
 }
