@@ -155,3 +155,121 @@
 .rate {
   cursor: pointer;
 }
+
+.card__tabs {
+  margin-bottom: 100px;
+}
+
+.card__tab-box {
+  background-color: #F0F0F4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  height: 70px;
+}
+
+.card__tab {
+  padding: 5px 0 5px;
+  border-bottom: 2px solid transparent;
+  transition: all .3s;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2F3035;
+  opacity: 0.6;
+
+  &:hover {
+    border-bottom: 2px solid $blue;
+    opacity: 1;
+  }
+
+  &.active {
+    border-bottom: 2px solid $blue;
+    opacity: 1;
+  }
+}
+
+.card__top-line {
+  margin-bottom: 10;
+}
+
+.card__label--search,
+.card__label--pickup {
+  font-size: 17px;
+  line-height: 20px;
+  color: rgba(47, 48, 53, 0.7);
+  cursor: pointer;
+}
+
+.card__input--search {
+  background: #F0F0F4;
+  border-radius: 3px;
+  margin-left: 17px;
+  padding: 9px 37px 9px 17px;
+  border: none;
+  margin-right: 100px;
+}
+
+.card__label--pickup {
+  margin-left: 54px;
+}
+
+.card__list {
+
+  &--item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+    display: flex;
+
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(47, 48, 53, 0.7);
+
+    &:first-child {
+      font-size: 20px;
+      line-height: 24px;
+      color: rgb(47, 48, 53);
+    }
+  }
+
+  &--address {
+    width: 220px;
+    margin-right: 80px;
+  }
+
+  &--workhours {
+    width: 157px;
+    margin-right: 96px;
+
+    & .workhours {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--avialable {
+    width: 140px;
+    margin-right: 60px;
+  }
+
+  &--num {
+    width: 104px;
+  }
+
+  &--btn {
+    margin-left: auto;
+
+    button {
+      padding: 9px 40px;
+      background-color: $blue;
+      border: none;
+      border-radius: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.12em;
+      color: #FFFFFF;
+    }
+  }
+}
