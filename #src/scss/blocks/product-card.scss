@@ -137,6 +137,12 @@
     margin-bottom: 40px;
   }
 
+  &__btn {
+    &--mobile {
+      display: none;
+    }
+  }
+
   &__btn button {
     padding: 16px 56px;
     font-size: 14px;

@@ -15,11 +15,15 @@ $('.tab').on('click', function(e){
     //удаляем класс эктив у всех табов
     $($(this).siblings()).removeClass('active');
     //удаляем класс эктив у всех контентов
-    $($(this).parent().siblings().find('div')).removeClass('active');
+   // $($(this).parent().parent().siblings().find('div')).removeClass('active');
+    $($(this).closest('.tabs__wrapper').siblings().find('div')).removeClass('active');
 
     $(this).addClass('active');
     //добавляем эктив нужному контенту
     $($(this).attr('href')).addClass('active');
+
+    //баг с инициализацией слайдера
+    $('.product-slider').slick('setPosition');
 });
 
 //favorite heart
@@ -84,4 +88,10 @@ $('.footer-top__drop').click(function(){
     $(this).toggleClass('active');
 })
 
+
+// aside btn adaptive
+$('.aside__btn').click(function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+})
 });
