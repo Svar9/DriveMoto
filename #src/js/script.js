@@ -78,4 +78,10 @@ $('.menu__btn').click(function(){
 })
 
 
+// footer dropdown
+$('.footer-top__drop').click(function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('active');
+})
+
 });
